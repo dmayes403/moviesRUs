@@ -5,10 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="style.css">
-  <title>Document</title>
+  <title>MoviesRUs</title>
 </head>
 <body ng-controller="mainCtrl">
-  <h1> Hello! </h1>
+  <main class="main">
+    <header class="header_container">
+      <section class="header_logo_box">
+        <img src="./images/MoviesRUsLogo.png">
+      </section>
+      <section class="header_title">
+        <h1>MoviesRUs</h1>
+      </section>
+    </header>
+    <section class="middle">
+
+
+    <div class="image" ng-repeat="movie in movies">
+      <img ng-src="http://image.tmdb.org/t/p/w150/{{movie.poster_path}}">
+    </div>
+  </middle>
+
+
+  </main>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.js"></script>

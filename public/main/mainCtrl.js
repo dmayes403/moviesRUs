@@ -5,6 +5,7 @@ angular.module('moviesRUs')
           console.log('hello');
           mainSrvc.getMovies().then((response) => {
             console.log(response);
+            $scope.movies = response;
           });
         }
 
